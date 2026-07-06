@@ -54,7 +54,7 @@ A `config.txt` is created next to the `.nro` on first run:
 * `lang` — Source language name (default `english`)
 * `show_fps` — `1` to overlay the FPS counter
 * `gamepad` — `1` to enable joystick input (default `1`)
-* `console` — `1` to enable the developer console (default `1`)
+* `console` — `1` to enable the developer console (default `0`)
 
 ### How to build
 
@@ -71,7 +71,6 @@ Run `make`
 
 * nillerusr for the Android Source engine port this wraps
 * TheOfficialFloW & fgsfds for the so-loader lineage
-* the hl2_nx port this is derived from
 
 ### Support
 
