@@ -5,7 +5,7 @@
 </div>
 <h1 align=center>Counter-Strike: Source — Nintendo Switch port</h1>
 
-This is a wrapper/port of the Android version of Counter-Strike: Source v1.09 (nillerusr
+This is a wrapper/port of the Android version of Counter-Strike: Source v1.09_96 (nillerusr
 Source engine port). It loads the original game's ARM64 libraries and runs them
 as-is in a minimalist fake-Android environment.
 
