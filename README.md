@@ -55,6 +55,20 @@ A `config.txt` is created next to the `.nro` on first run:
 * `show_fps` — `1` to overlay the FPS counter
 * `gamepad` — `1` to enable joystick input (default `1`)
 * `console` — `1` to enable the developer console (default `0`)
+* `gyro_enabled` — `1` to enable gyroscope aiming (default `0`)
+* `gyro_sensitivity_x` / `gyro_sensitivity_y` — horizontal and vertical gyro
+  sensitivity in percent (default `100`)
+* `gyro_invert_x` / `gyro_invert_y` — `1` to invert that gyro axis
+* `gyro_space` — `0` for controller-local axes, `1` for world-space yaw, or `2`
+  for player-space yaw blending (default `0`)
+* `gyro_tighten` — `1` to taper tiny motion and reduce sensor drift
+* `gyro_accel` — `1` to apply up to 2× sensitivity during fast motion
+
+Gyro input supports handheld mode, Pro Controllers, and paired Joy-Con. It is
+only injected while the game has relative mouse mode active, so it does not move
+the menu cursor. A useful starting point is `gyro_enabled 1`,
+`gyro_sensitivity_x 200`, `gyro_sensitivity_y 150`, `gyro_space 2`, and
+`gyro_tighten 1`.
 
 ### How to build
 
