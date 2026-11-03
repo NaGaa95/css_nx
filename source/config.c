@@ -18,7 +18,6 @@
   CONFIG_VAR_INT(screen_height); \
   CONFIG_VAR_STR(args); \
   CONFIG_VAR_STR(lang); \
-  CONFIG_VAR_INT(show_fps); \
   CONFIG_VAR_INT(gamepad); \
   CONFIG_VAR_INT(console); \
   CONFIG_VAR_INT(gyro_enabled); \
@@ -103,7 +102,6 @@ int read_config(const char *file) {
   strlcpy_(config.gamedir, "cstrike", sizeof(config.gamedir)); // fixed: cstrike-only port
   strlcpy_(config.args, "", sizeof(config.args));
   strlcpy_(config.lang, "english", sizeof(config.lang));
-  config.show_fps = 0;
   config.gamepad = 1;
   config.console = 0;
   config.gyro_enabled = 0;

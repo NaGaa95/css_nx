@@ -52,7 +52,6 @@ A `config.txt` is created next to the `.nro` on first run:
   the engine pick by dock state (1920×1080 docked, 1280×720 handheld)
 * `args` — extra Source command line (e.g. `+map de_dust2`)
 * `lang` — Source language name (default `english`)
-* `show_fps` — `1` to overlay the FPS counter
 * `gamepad` — `1` to enable joystick input (default `1`)
 * `console` — `1` to enable the developer console (default `0`)
 * `gyro_enabled` — `1` to enable gyroscope aiming (default `0`)
@@ -104,3 +103,8 @@ users to legally own the original game.
 
 Unless specified otherwise, the source code provided in this repository is
 licensed under the MIT License. Please see the accompanying LICENSE file.
+
+### SaltyNX telemetry
+
+FPS and render resolution are published to SaltyNX shared memory for compatible overlays. The port continues normally when SaltyNX is not running. This reports presentation timing and resolution; it does not change the game's frame cap.
+The old wrapper FPS overlay and its `show_fps` setting have been removed. Existing config entries are ignored; use a SaltyNX-compatible overlay to view FPS.

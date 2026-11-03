@@ -34,7 +34,6 @@ typedef struct {
   char gamedir[64];
   char args[256];
   char lang[32];
-  int show_fps;
   int gamepad;
   int console;
   int gyro_enabled;
